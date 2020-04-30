@@ -1,6 +1,6 @@
 <template>
-    <div class="password-wrapper">
-        <input :type="toggle ? 'text' : 'password'" placeholder="Password"/>
+    <div class="input-wrapper">
+        <input :type="toggle ? 'text' : 'password'" placeholder="Password" @input="$emit('input',$event.target.value)"/>
         <ToggleEye @onToggle="eyeToggled"/>
     </div>
 </template>
@@ -9,7 +9,30 @@
 import ToggleEye from '../EyeWrapper/ToggleEye.component'
 export default {
     name:'PasswordInput',
-    props:['theme','min','max','regexToMatch','value'],
+    props: {
+        theme: {
+            type:String,
+            default:'light',
+        },
+        min: {
+            type:Number,
+        },
+        max : {
+            type:Number,
+        },
+        regexToMatch : {
+            type:RegExp,
+            default: /^*$/
+        },
+        value: {
+            type:String,
+            default:''
+        },
+        placeholder: {
+            type:String,
+            default:''
+        }
+    },
     components:{
         ToggleEye
     },
@@ -28,7 +51,7 @@ export default {
 </script>
 
 <style scoped>
-.password-wrapper {
+.input-wrapper {
     padding:10px 15px;
     min-width: 200px;
     display: flex;
