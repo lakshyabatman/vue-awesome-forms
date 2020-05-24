@@ -22,11 +22,6 @@ export default {
         OTP : function(oldValue,newValue) {
             this.$emit('input',newValue)
         }
-    },
-    methods:{
-        emitValue () {
-             
-        }
     }
 }
 </script>
