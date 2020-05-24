@@ -18,6 +18,11 @@ export default {
             OTP:['','','','']
         }
     },
+    watch:{
+        OTP : function(oldValue,newValue) {
+            this.$emit('input',newValue)
+        }
+    },
     methods:{
         emitValue () {
              
