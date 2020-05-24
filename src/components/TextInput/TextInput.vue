@@ -1,12 +1,22 @@
 <template>
-    <div class="input-wrapper" :class="theme">
-        <input :type="type"   @input="$emit('input',$event.target.value)" :placeholder="placeholder"/>
-    </div>
+  <div
+    class="input-wrapper"
+    :class="theme"
+  >
+    <input
+      :type="type"
+      :placeholder="placeholder"
+      @input="$emit('input',$event.target.value)"
+    >
+  </div>
 </template>
 
 <script>
 export default {
     name:'TextInput',
+    components:{
+        
+    },
     props: {
         theme: {
             type:String,
@@ -33,9 +43,6 @@ export default {
             type:String,
             default:''
         }
-    },
-    components:{
-        
     },
     
     methods : {

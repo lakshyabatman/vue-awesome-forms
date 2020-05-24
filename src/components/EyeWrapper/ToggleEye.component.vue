@@ -1,8 +1,18 @@
 <template>
-    <div class="eye-wrapper">
-            <img v-if="toggle" @click="toggleEye" src="../../assets/eyeoff.svg" alt="">
-            <img v-else @click="toggleEye" src="../../assets/eyeon.svg" alt="">
-    </div>
+  <div class="eye-wrapper">
+    <img
+      v-if="toggle"
+      src="../../assets/eyeoff.svg"
+      alt=""
+      @click="toggleEye"
+    >
+    <img
+      v-else
+      src="../../assets/eyeon.svg"
+      alt=""
+      @click="toggleEye"
+    >
+  </div>
 </template>
 
 <script>

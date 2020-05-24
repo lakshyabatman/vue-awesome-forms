@@ -1,10 +1,10 @@
 <template>
-    <div class="input-wrapper">
-        <select>
-            <option>Hi</option>
-            <option>World</option>
-        </select>
-    </div>
+  <div class="input-wrapper">
+    <select>
+      <option>Hi</option>
+      <option>World</option>
+    </select>
+  </div>
 </template>
 
 <script>

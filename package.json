@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-lib":"vue-cli-service build --target lib --name vue-forms src/main.js"
+    "build-lib": "vue-cli-service build --target lib --name vue-forms src/main.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -28,6 +28,7 @@
     },
     "extends": [
       "plugin:vue/essential",
+      "plugin:prettier/recommended",
       "eslint:recommended"
     ],
     "parserOptions": {
