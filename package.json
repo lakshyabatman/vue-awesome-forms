@@ -1,7 +1,15 @@
 {
-  "name": "vue-forms",
+  "name": "vue-awesome-forms",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "repository": {
+    "url": "https://github.com/lakshyabatman/vue-awesome-forms"
+  },
+  "description": "Light weight UI library for Vue Forms",
+  "author": {
+    "name": "Lakshya Khera",
+    "email": "lakshya.khera@gmail.com"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
